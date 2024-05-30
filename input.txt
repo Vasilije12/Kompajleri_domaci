@@ -1,1 +1,19 @@
-+ - * / % \
+let
+double x;
+double y;
+double z;
+string s;
+in
+y=2.14;
+read y;
+write x;
+z!=x;
+y%x;
+x/y;
+x*y;
+s="Vasilije";
+x=1;
+if !x then
+z=1;
+fi
+end
