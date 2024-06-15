@@ -692,102 +692,102 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 10 "Pmf0.l"
-{ printf("Token LET\n");return LET; }
+{ return LET; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
 #line 11 "Pmf0.l"
-{ printf("Token IN\n");return IN; }
+{ return IN; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
 #line 12 "Pmf0.l"
-{ printf("Token END\n");return END; }
+{ return END; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
 #line 13 "Pmf0.l"
-{printf("Token FI\n");return FI;}
+{return FI;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
 #line 14 "Pmf0.l"
-{printf("Token IF\n");return IF;}
+{return IF;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
 #line 15 "Pmf0.l"
-{printf("Token THEN\n");return THEN;}
+{return THEN;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
 #line 16 "Pmf0.l"
-{printf("Token ELSE\n");return ELSE;}
+{return ELSE;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
 #line 17 "Pmf0.l"
-{printf("Token CONTINUE\n");return CONTINUE;}
+{return CONTINUE;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
 #line 18 "Pmf0.l"
-{printf("Token WHILE\n");return WHILE;}
+{return WHILE;}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
 #line 19 "Pmf0.l"
-{printf("Token FOR\n");return FOR;}
+{return FOR;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
 #line 20 "Pmf0.l"
-{printf("Token BREAK\n");return BREAK;}
+{return BREAK;}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
 #line 21 "Pmf0.l"
-{printf("Token INT\n");return INT;}
+{return INT;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
 #line 22 "Pmf0.l"
-{printf("Token DOUBLE\n");return DOUBLE;}
+{return DOUBLE;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
 #line 23 "Pmf0.l"
-{printf("Token TRUE\n");return T_TRUE;}   //regularni izraz za boolean konstante
+{return T_TRUE;}   //regularni izraz za boolean konstante
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
 #line 24 "Pmf0.l"
-{printf("Token FALSE\n");return T_FALSE;}
+{return T_FALSE;}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
 #line 25 "Pmf0.l"
-{printf("Token STRING\n");return STRING;}
+{return STRING;}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
 #line 26 "Pmf0.l"
-{printf("Token DO\n");return DO;}
+{return DO;}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
 #line 27 "Pmf0.l"
-{printf("Token READ\n");return READ;}
+{return READ;}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
 #line 28 "Pmf0.l"
-{printf("Token WRITE\n");return WRITE;}
+{return WRITE;}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
 #line 31 "Pmf0.l"
-{printf("Token: T_ID(%s)\n", yytext);yylval.ident=(char*)strdup(yytext);//bio je problem {0.30}\b
+{yylval.ident=(char*)strdup(yytext);//bio je problem {0.30}\b
                                         return T_ID;}//regularni izraz za identifikatore duge 31 karakter,posle 31 karaktera nece registrovati da je identifikator
 	YY_BREAK
 case 21:
@@ -821,7 +821,7 @@ YY_RULE_SETUP
 case 26:
 YY_RULE_SETUP
 #line 41 "Pmf0.l"
-{printf("Token: T_PLUS\n");return T_PLUS;}
+{return T_PLUS;}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
@@ -871,7 +871,7 @@ YY_RULE_SETUP
 case 36:
 YY_RULE_SETUP
 #line 51 "Pmf0.l"
-{printf("Token Dodjele\n");return T_DODJELE;} 
+{return T_DODJELE;} 
 	YY_BREAK
 case 37:
 YY_RULE_SETUP

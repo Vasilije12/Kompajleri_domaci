@@ -115,7 +115,7 @@ komanda : T_ID T_DODJELE int_exp T_SC {printf("Dodjela uspjesna\n");}
         
 ;
 
-if_statement: IF int_exp THEN sekv_komandi else_blok FI{printf("usli u if block\n")}
+if_statement: IF int_exp THEN sekv_komandi else_blok FI{}
              |IF double_exp THEN sekv_komandi else_blok FI{}
             
 ;
