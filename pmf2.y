@@ -88,7 +88,7 @@ void printAST(ASTNode *node, int level) {
             printf("Op: %c\n", node->nodetype); break;
         default: printf("Kljucna rijec: %c\n", node->nodetype);
     }
-    //nekako da se dodaje u neki niz sve sto je na istom nivou i onda da se printa
+    
    
     printAST(node->left, level +1);
     printAST(node->right, level +1);
